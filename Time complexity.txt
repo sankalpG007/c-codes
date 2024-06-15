@@ -1,0 +1,60 @@
+06.15 11:50 PM
+Time complexity
+
+Time complexity is a concept from computer science that describes the amount of computational time that an algorithm takes to complete as a function of the size of the input data. In C++, understanding and analyzing time complexity is crucial for writing efficient programs, especially when dealing with large datasets.
+
+Key Concepts of Time Complexity
+Big O Notation (O): Represents the upper bound of an algorithm's time complexity. It gives the worst-case scenario of the algorithm's growth rate.
+
+Example: 
+𝑂(𝑛)O(n),
+ 𝑂(𝑛2)O(n 2 ),
+ 𝑂(log𝑛)O(logn), 
+𝑂(1)
+O(1)
+
+Big Omega Notation (Ω): Represents the lower bound of an algorithm's time complexity. It gives the best-case scenario of the algorithm's growth rate.
+
+Example: 
+Ω(𝑛)
+Ω(n), 
+Ω(𝑛2)Ω(n 2 ), 
+Ω(log𝑛)
+Ω(logn), 
+Ω(1)
+Ω(1)
+
+Big Theta Notation (Θ): Represents the tight bound of an algorithm's time complexity. It gives both the upper and lower bounds, meaning it represents the average-case scenario.
+
+Example: 
+Θ(𝑛)
+Θ(n), 
+Θ(𝑛2)
+Θ(n 2 ), 
+Θ(log𝑛)Θ(logn), 
+Θ(1)Θ(1)
+
+Tips for Analyzing Time Complexity
+Identify Loops: Each loop typically contributes to the time complexity. A single loop over n elements usually results in 
+𝑂(𝑛)
+O(n).
+
+Nested Loops: Each nested loop multiplies the complexity. Two nested loops over n elements usually result in 
+𝑂(𝑛2)O(n 2 ).
+
+Recursive Calls: Analyze the number of recursive calls and how the problem size reduces with each call.
+Ignore Constants: In Big O notation, constants are ignored (e.g., 
+𝑂(2𝑛)
+O(2n) is simplified to 
+𝑂(𝑛)
+O(n)) because they do not significantly affect the growth rate.
+Worst Case: Time complexity usually considers the worst-case scenario.
+Practical Applications
+When writing C++ programs, consider the following to ensure efficiency:
+
+Use efficient data structures (e.g., std::vector, std::map, std::unordered_map).
+Choose the right algorithms for the task (e.g., quicksort, mergesort for sorting).
+Optimize loops and avoid unnecessary nested loops.
+Use built-in functions and algorithms from the STL (Standard Template Library) which are often optimized for performance.
+By understanding and applying time complexity theory, you can write C++ programs that are both efficient and scalable.
+
