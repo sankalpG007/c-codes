@@ -38,13 +38,16 @@ void display(node* head){
     cout<<"NULL"<<endl;
 }
 
+
+
 int main()
-{
+{ 
 
 node* head=NULL;
 insertAtTail(head,1);
 insertAtTail(head,2);
 insertAtTail(head,3);
+insertAtTail(head,4);
 display(head);
 
 return 0;
